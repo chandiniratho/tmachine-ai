@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {HashRouter as Router, Routes, Route } from "react-router-dom";
 import AccordionPage from "./pages/AccordionPage";
 import LearningPage from "./pages/LearningPage";
 import SubtopicPage from "./pages/SubtopicPage"; // Import SubtopicPage
