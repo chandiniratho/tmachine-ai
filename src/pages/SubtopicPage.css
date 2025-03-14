@@ -1,0 +1,470 @@
+/* General Layout */
+.subtopic-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #F8F8F8;
+}
+
+/* 🔹 Header Section (Python Course + Breadcrumbs) */
+/* 🔹 Header Section (Python Course + Breadcrumbs) */
+.header-section {
+    display: flex;
+    flex-direction: row; /* Change from column to row */
+    align-items: center; /* Align items in the center */
+    justify-content: flex-start;
+    padding: 10px 15px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    gap: 15px; /* Add spacing between badge and breadcrumbs */
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Python Course Badge */
+.python-course-badge {
+    background: linear-gradient(to right, #A770EF, #CF8BF3);
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+.breadcrumb-item {
+    font-size: 14px;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+/* 🔹 Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-user {
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* 🔹 Main Layout */
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #f0f5ff;
+    color: #3b5998;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chapter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chapter-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.chapter-item:hover {
+    background: #e0e8ff;
+}
+
+.chapter-item.active {
+    background: #7B5AE4;
+    color: white;
+    font-weight: bold;
+}
+
+.chapter-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 🔹 Content Area */
+.content {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+/* Chapter Content Box */
+.subtopic-content {
+    background: white;
+    padding: 30px; /* Increase padding for a bigger box */
+    word-spacing: 3px;
+    max-width: 900px; /* Set a max width for responsiveness */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    border-left: 2px solid #7B5AE4; /* Violet margin on the left */
+    border-right: 2px solid #7B5AE4; /* Violet margin on the right */
+    border-top: 2px solid #7B5AE4;
+    border-bottom: 2px solid #7B5AE4;
+    letter-spacing: 0.5px; /* Subtle spacing in characters */
+    text-indent: 10px;
+   
+
+}
+.subtopic-box {
+    background: white;
+    margin-top: 40px;
+    padding: 30px; /* Increase padding for a bigger box */
+    word-spacing: 3px;
+    max-width: 900px; /* Set a max width for responsiveness */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    border-left: 2px solid #7B5AE4; /* Violet margin on the left */
+    border-right: 2px solid #7B5AE4; /* Violet margin on the right */
+    border-top: 2px solid #7B5AE4;
+    border-bottom: 2px solid #7B5AE4;
+    letter-spacing: 0.5px; /* Subtle spacing in characters */
+    text-indent: 10px; 
+
+}
+.additional-content-box {
+    background: white;
+    margin-top: 40px;
+    padding: 30px; /* Increase padding for a bigger box */
+    padding-left: 160px;
+    padding-right: 160px;
+    word-spacing: 3px;
+    max-width: 900px; /* Set a max width for responsiveness */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    border-left: 2px solid #7B5AE4; /* Violet margin on the left */
+    border-right: 2px solid #7B5AE4; /* Violet margin on the right */
+    border-top: 2px solid #7B5AE4;
+    border-bottom: 2px solid #7B5AE4;
+    letter-spacing: 0.5px; /* Subtle spacing in characters */
+    text-indent: 10px; 
+    transition: opacity 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.flying-robo {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 50px;
+    opacity: 0.8;
+}
+
+/* Highlighted Words */
+.highlight {
+    background: aqua;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* 🔹 Bottom Controls */
+.bottom-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.next-btn {
+    background: linear-gradient(135deg, #7B5AE4, #AE7BE6);
+    margin-top: 205px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.next-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+/* Breadcrumb dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+/* Individual dropdown item */
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
+.chapter-dropdown {
+    position: relative;
+}
+
+.nested-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    display: none;
+    min-width: 200px;
+}
+
+.chapter-dropdown:hover .nested-dropdown {
+    display: block;
+}
+
+.topic-dropdown {
+    position: relative;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Container */
+.popup {
+    background: white;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: left;
+    overflow: hidden;
+}
+
+
+
+/* Header with Gradient */
+.popup-header {
+    background: linear-gradient(to right, #6a11cb, #c471ed);
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Popup Body */
+.popup-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Word Input */
+.word-input {
+    width: 100%;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Definition Box */
+.definition-box {
+    width: 100%;
+    min-height: 50px;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+/* Options Row */
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+/* Rounded Number */
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #6a11cb;
+    color: #6a11cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Language Selection */
+.language-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Radio Buttons */
+.language-options input[type="radio"] {
+    margin-right: 4px;
+}
+
+/* Checkbox */
+.language-checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: #6a11cb;
+}
+/* Highlighted word turns green when Tamil is selected */
+.word-input.tamil-text {
+    color: green;
+    font-weight: bold;
+}
+.merged-content-box, .additional-content-box {
+    background: #f0f0f0;
+    padding: 15px;
+
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    width: 80%;
+}
+
+.merged-content-box:hover, .additional-content-box:hover {
+    background: #e0e0e0;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background: white;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    word-spacing: 2px;  /* Adjust space between words */
+  letter-spacing: 0.5px; /* Slight spacing between letters */
+  line-height: 1.6; /* Space between lines */
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
