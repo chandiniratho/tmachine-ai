@@ -10,7 +10,7 @@ const TrueFalsePage = () => {
     const [mergeStep, setMergeStep] = useState(location.state?.mergeStep || 0);
     console.log("Current mergeStep in TrueFalsePage:", mergeStep);
     // Countdown Timer Logic
-    useEffect(() => {
+    useEffect(() => {   
         const interval = setInterval(() => {
             setTimer((prevTimer) => {
                 if (prevTimer <= 1) {
